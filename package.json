@@ -1,0 +1,25 @@
+{
+  "name": "listener-azure",
+  "version": "1.0.0",
+  "description": "Funcion en Azure que consume una cola para luego enviar el mensaje a otra cola",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "coverage": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/functions": "^3.5.0",
+    "@types/node": "^16.18.119",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@azure/service-bus": "^7.9.5",
+    "moment-timezone": "^0.5.46",
+    "winston": "^3.17.0"
+  }
+}

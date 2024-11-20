@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "name": "job",
+      "queueName": "sb-test",
+      "connection": "AZURE_SERVICEBUS_LOCAL_CONNECTION_STRING"
+    }
+  ],
+  "scriptFile": "../dist/queueTriggerInventory/index.js"
+}
